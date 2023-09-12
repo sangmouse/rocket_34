@@ -1,0 +1,64 @@
+@font-face {
+  font-family: robotoRegular;
+  src: url("./fonts/roboto/Roboto-Regular.ttf") format("truetype");
+}
+@font-face {
+  font-family: robotoBold;
+  src: url("./fonts/roboto/Roboto-Bold.ttf") format("truetype");
+}
+
+
+html, body{
+  overflow-x: hidden;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-size: 14px;
+  font-family: robotoRegular, Arial, Helvetica, sans-serif;
+  padding: 30px;
+}
+
+.subheading{
+  font-size: 18px;
+  font-family: robotoBold, Arial, Helvetica, sans-serif;
+}
+.btn{
+  margin: 0 0 0 30px;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.img-container{
+  margin: 0 0 20px 0;
+  height: 328px;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.heading{
+  font-family: robotoBold, Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin: 0 0 10px 0;
+}
+.card-container{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card-item{
+  margin: 15px;
+  flex: calc(100% / 3 - 30px);
+  max-width: calc(100% / 3 - 30px);
+}
+.description{
+  border: 1px solid grey;
+}
