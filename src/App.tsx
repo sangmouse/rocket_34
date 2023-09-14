@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "./App.css";
 import { Message } from "./Message";
 import Card from "./Card";
+import Form from "./form/Form";
 
 export interface CardItem {
   imgUrl: string;
@@ -115,6 +116,8 @@ function App() {
         hello world
       </p>
       <p className="description">Hello world</p>
+
+      <Form />
     </div>
   );
 }

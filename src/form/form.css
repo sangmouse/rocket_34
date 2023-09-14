@@ -1,0 +1,66 @@
+.form {
+    margin: 50px auto 50px auto;
+    width: 500px;
+    border: 1px solid var(--var-lightblue);
+    border-radius: 5px;
+    padding: 30px;
+    background: rgba(192, 192, 192, 0.187);
+}
+
+.form .form__heading{
+    text-align: center;
+    margin: 0 0 30px 0;
+    letter-spacing: 1.2px;
+}
+.form .form__submit .form__container label {
+    display: block;
+    margin: 0 0 5px 0;
+    letter-spacing: 1.2px;
+}
+.form .form__submit .form__container .form__textbox {
+    display: block;
+    width: 100%;
+    border-radius: 2px;
+    border: 1px solid var(--var-lightblue);
+    height: 40px;
+    padding: 10px;
+    margin: 0 0 20px 0;
+}
+.form .form__submit .form__container .form__textbox:focus{
+    outline: none;
+}
+.form .form__submit .form__container .form__textbox::placeholder{
+    font-size: 12px;
+}
+
+.form .form__submit .form__btn{
+    display: inline-block;
+    width: 120px;
+    height: 30px;
+    background: var(--var-lightblue);
+    border: none;
+    cursor: pointer;
+    color: var(--var-white, #fff);
+    letter-spacing: 1.2px;
+    font-family: robotoMedium, Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    margin: 15px 0 0 0;
+}
+.form .form__submit .form__member{
+    text-align: center;
+    font-size: 13px;
+}
+.form .form__submit .form__member .form__btn--signup {
+    color: var(--var-lightblue);
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+.form .form__submit .form__member .form__btn--signup:hover{
+    text-decoration: underline;
+}
+.form .form__submit .form__error {
+    color: var(--var-red);
+    font-size: 13px;
+    margin: 0 0 20px 0;
+}

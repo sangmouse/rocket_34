@@ -6,6 +6,10 @@
   font-family: robotoBold;
   src: url("./fonts/roboto/Roboto-Bold.ttf") format("truetype");
 }
+@font-face {
+  font-family: robotoMedium;
+  src: url("./fonts/roboto/Roboto-Medium.ttf") format("truetype");
+}
 
 
 html, body{
