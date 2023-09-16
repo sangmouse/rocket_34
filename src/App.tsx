@@ -3,6 +3,7 @@ import "./App.css";
 import { Message } from "./Message";
 import Card from "./Card";
 import Form from "./form/Form";
+import { Link } from "react-router-dom";
 
 export interface CardItem {
   imgUrl: string;
@@ -12,6 +13,8 @@ export interface CardItem {
 
 function App() {
   const [count, setCount] = useState<number>(0);
+  const [username, setUsername] = useState<string>("");
+  const [password, setPassword] = useState<string>("");
 
   function handleClick() {
     console.log("Hello world");
@@ -46,6 +49,11 @@ function App() {
   ];
 
   const cards2 = [];
+
+  const handleGetData = (username: string, password: string) => {
+    setUsername(username)
+    setPassword(password)
+  }
 
   return (
     <div>
@@ -117,7 +125,12 @@ function App() {
       </p>
       <p className="description">Hello world</p>
 
-      <Form />
+      <p><b>Username: </b> {username} </p>
+      <p><b>Password: </b>{password}</p>
+      <Form getData={handleGetData} />
+      <p>
+        <Link to="contact">Go to contact page</Link>
+      </p>
     </div>
   );
 }

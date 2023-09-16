@@ -1,0 +1,8 @@
+.child {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.child .child__title {
+    margin: 0 0 20px 0;
+}

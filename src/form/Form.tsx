@@ -1,7 +1,22 @@
 import React, { useState } from "react";
+import Child from "../props/Child"
 import "./form.css";
+import Question1 from "../props/Temperature";
+import { FormProps } from "../types/Childs";
 
-export default function Form() {
+/**
+ * const Form: () => {
+ *  return (
+ *    <></>
+ * )
+ * }
+ * component: state = trạng thái
+ * communicate: props = property
+ */
+
+
+
+export default function Form({ getData }: FormProps) {
   const [username, setUsername] = useState<string>("");
   const [password, setPassword] = useState<string>("");
   const [message, setMessage] = useState<string>("");
@@ -35,6 +50,9 @@ export default function Form() {
       const data = await res.json();
       setMessage(data.message);
     });
+
+    getData(username, password)
+
   };
 
   return (
@@ -88,6 +106,13 @@ export default function Form() {
           </button>
         </p>
       </form>
+
+      {/* <p>{username}</p>
+      <p>{password}</p> */}
+
+      <Child username={username} password={password} />
+      <Question1 />
+
     </div>
   );
 }
