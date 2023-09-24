@@ -1,4 +1,4 @@
-import { CardItem } from "./App";
+import { CardItem } from "./Learn";
 
 export default function Card(props: { card: CardItem; children: JSX.Element }) {
   const { card, children } = props;

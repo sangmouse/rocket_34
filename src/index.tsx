@@ -1,20 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { RouterProvider, createBrowserRouter } from "react-router-dom"
 import Contact from './Contact';
+import Users from 'components/Users';
+import LayoutRoot from 'components/LayoutRoot';
+import UsersAxiosPage from 'components/UsersAxios';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <App />,
+    element: <LayoutRoot />,
+    children: [
+      {
+        path: "users",
+        element: <Users />
+      },
+      {
+        path: "users-axios",
+        element: <UsersAxiosPage />
+      }
+    ]
   },
-  {
-    path: "contact",
-    element: <Contact />
-  }
+
 ])
 
 // /contact

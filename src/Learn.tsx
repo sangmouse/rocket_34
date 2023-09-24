@@ -57,6 +57,11 @@ function App() {
 
   return (
     <div>
+      <ul>
+        <li>
+          <Link to="users">Users Page</Link>
+        </li>
+      </ul>
       <p className="subheading">
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis
         autem accusantium est provident doloremque dignissimos optio ducimus
