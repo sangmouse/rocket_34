@@ -25,6 +25,9 @@ export default function LayoutRoot() {
                         <li>
                             <Link to="services" className={styles["header__link"]}>Services</Link>
                         </li>
+                        <li>
+                            <Link to="users2" className={styles["header__link"]}>Users2</Link>
+                        </li>
                     </ul>
                 </div>
                 <Outlet />

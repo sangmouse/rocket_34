@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import { RouterProvider, createBrowserRouter } from "react-router-dom"
-import Contact from './Contact';
 import Users from 'components/Users';
 import LayoutRoot from 'components/LayoutRoot';
 import UsersAxiosPage from 'components/UsersAxios';
+import Users2 from 'components/Users2';
 
 const router = createBrowserRouter([
   {
@@ -16,6 +16,10 @@ const router = createBrowserRouter([
       {
         path: "users",
         element: <Users />
+      },
+      {
+        path: "users2",
+        element: <Users2/>
       },
       {
         path: "users-axios",
