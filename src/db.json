@@ -20,5 +20,11 @@
       "name": "trung111",
       "id": 6
     }
+  ],
+  "posts": [
+    {
+      "id": 1,
+      "title": "Post 1"
+    }
   ]
 }

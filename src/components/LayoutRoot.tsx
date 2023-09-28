@@ -28,6 +28,9 @@ export default function LayoutRoot() {
                         <li>
                             <Link to="users2" className={styles["header__link"]}>Users2</Link>
                         </li>
+                        <li>
+                            <Link to="redux-page" className={styles["header__link"]}>Redux Page</Link>
+                        </li>
                     </ul>
                 </div>
                 <Outlet />
